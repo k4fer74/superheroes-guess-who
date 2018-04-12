@@ -1,6 +1,9 @@
 <template>
   <ul>
-    <li v-for="hero in heroes">{{hero.name}}</li>
+    <li v-for="hero in heroes">
+      <img :src="hero.avatar" height="60">
+      {{hero.name}}
+    </li>
   </ul>
 </template>
 

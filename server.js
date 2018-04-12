@@ -7,6 +7,7 @@ const Server  = require("http").Server(App)
 Server.listen(1337)
 
 App.use(Express.static("dist"))
+App.use(Express.static("public"))
 
 App.get("/", (req, res) => {
   res.sendFile(`${__dirname}/index.html`)
