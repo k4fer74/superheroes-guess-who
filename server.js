@@ -6,8 +6,10 @@ const Server  = require("http").Server(App)
 
 Server.listen(1337)
 
+App.use(Express.static("dist"))
+
 App.get("/", (req, res) => {
-  res.sendFile(`${__dirname}/src/index.html`)
+  res.sendFile(`${__dirname}/index.html`)
 })
 
 App.listen(3001)
