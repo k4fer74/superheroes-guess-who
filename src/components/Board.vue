@@ -1,7 +1,7 @@
 <template>
   <ul>
-    <li v-for="hero in heroes">
-      <img :src="hero.avatar" height="60">
+    <li v-for="hero in heroes" :style="{backgroundColor: hero.color}">
+      <img :src="hero.avatar" height="200">
       {{hero.name}}
     </li>
   </ul>
